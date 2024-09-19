@@ -56,7 +56,6 @@ body {
   button:hover {
     background-color: #555;
   }
-<<<<<<< HEAD
   .result, .actividad {
     position: fixed;
     left: 80vw;
@@ -74,33 +73,4 @@ body {
   .actividad {
     top: 60vh;
   }
-  .actividad #guardar {
-    margin-top: 10px; /* Espacio superior para separar del contenido */
-    padding: 10px 20px; /* Relleno interno del botón */
-    background-color: #333; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde alrededor del botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  }
-  
-  .actividad #guardar:hover {
-    background-color: #555; /* Color de fondo del botón al pasar el cursor sobre él */
-  }
-=======
-  .corner-section {
-    position: fixed;
-    left: 4vw;
-    top: 10vh;
-    right: 10px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 150px; 
-}
 
-.corner-section p {
-    margin: 5px 0;
-}
->>>>>>> 724abce3ddb9180109839b0bbf2f84f5006a3c85
