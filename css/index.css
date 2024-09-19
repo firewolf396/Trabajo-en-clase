@@ -2,16 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
   }
 
-  .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
 
   h2 {
     text-align: center;
@@ -40,7 +33,17 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-
+  .actividades{
+    position: fixed;
+    left: 20vw;
+    top: 4vh;
+    background-color: #f0f0f0;
+    padding: 1000px;
+    border-radius: 0px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    width: 50%; 
+  }
+  
   button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -50,7 +53,21 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
-
   button:hover {
     background-color: #555;
   }
+  .corner-section {
+    position: fixed;
+    left: 4vw;
+    top: 10vh;
+    right: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 150px; 
+}
+
+.corner-section p {
+    margin: 5px 0;
+}

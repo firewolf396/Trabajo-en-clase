@@ -9,29 +9,27 @@
    <link rel="stylesheet" href="js/index.js">
 </head>
 <body>
-
-  <div class="container">
-    <h2>Formulario de Actividades y Notas</h2>
+    <table>
+        <div class="corner-section">
+            <p id="nombreapp"><strong>App Nombre</strong></p>
+            <p>Jhonatan p</p>
+            <p>Eder z</p>
+        </div>
+    </table>
+  
     
-    <form id="activityForm">
-      <table id="activityTable">
-        <thead>
+      <table id="Actividades" class="actividades">
           <tr>
+            <th></th>
             <th>Actividad</th>
             <th>Nota</th>
           </tr>
-        </thead>
-        <tbody>
           <tr>
+            <td><button>hola</button></td>
             <td><input type="text" name="actividad[]" placeholder="Nombre de la actividad" required></td>
             <td><input type="number" name="nota[]" placeholder="Nota" min="0" max="10" required></td>
           </tr>
-        </tbody>
-      </table>
-      <button type="button" onclick="agregarFila()">Agregar Actividad</button>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
+        </table>
 
   <script src="js/index.js"></script>
 
