@@ -9,18 +9,9 @@ function agregarFila(nombre, nota) {
  
    let botonEliminar = document.createElement("button");
    botonEliminar.textContent = "Eliminar"; // Texto del botón
- 
-   // Agrega un evento al botón para que elimine la fila cuando se presione
    
    botonEliminar.addEventListener('click', function() {
-    let confirmar = confirm("¿Estás seguro de que deseas eliminar esta fila?");
-    if (confirmar) {
-      // Obtenemos el índice de la fila actual
-      let indiceFila = nuevaFila.rowIndex;
-      // Eliminamos la fila usando su índice
-      tabla.deleteRow(indiceFila - 1); // Restamos 1 porque rowIndex incluye el encabezado
-      promedio_estado();
-    }
+    mostrarModalEliminar(nuevaFila); 
   });
 
    celdaBoton.appendChild(botonEliminar);
@@ -63,8 +54,32 @@ function agregarFila(nombre, nota) {
  function guardar_valores(){
     let nombre = document.getElementById("actividad").value;
     let nota = document.getElementById("nota").value;
+     // Validar 
+  if (isNaN(nota) || nota < 0 || nota > 5) {
+    alert("Por favor, ingresa una nota válida entre 0.0 y 5.0.");
+    return;
+  }
     agregarFila(nombre, nota);
     
 
-    
+
  }
+function mostrarModalEliminar(fila) {
+  let modal = document.getElementById("modal");
+  let btnConfirmar = document.getElementById("modalsi");
+  let btnCancelar = document.getElementById("modalno");
+
+  // Mostrar
+  modal.style.display = "block";
+
+  btnConfirmar.onclick = function() {
+    fila.remove(); 
+    modal.style.display = "none"; 
+    promedio_estado(); 
+  };
+
+  // Cancelar y cerrar el modal
+  btnCancelar.onclick = function() {
+    modal.style.display = "none";
+  };
+}
