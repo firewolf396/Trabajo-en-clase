@@ -4,7 +4,15 @@ body {
     padding: 0;
     background-color: #ffffff;
   }
-
+.corner-section{
+    position: fixed;
+    left: 5vw;
+    top: 4vh;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
 
   h2 {
     text-align: center;
@@ -28,7 +36,7 @@ body {
   }
 
   input[type="text"], input[type="number"] {
-    width: 100%;
+    width: 90%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -43,7 +51,7 @@ body {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     width: 50%; 
   }
-  
+ 
   button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -52,6 +60,16 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+  .agregar {
+    position: fixed;
+    left: 40vw;
+    top: 25vh;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .guardar {
+    display: inline-block;
   }
   button:hover {
     background-color: #555;
@@ -67,10 +85,22 @@ body {
   }
   
   .result {
-    top: 10vh;
+    position: fixed;
+    left: 76vw;
+    top: 4vh;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   }
   
   .actividad {
-    top: 60vh;
+    position: fixed;
+    left: 76vw;
+    top: 40vh;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   }
 

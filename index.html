@@ -19,36 +19,41 @@
   
     
       <table id="Actividades" class="actividades">
+        <thead>
           <tr>
             <th></th>
             <th>Actividad</th>
             <th>Nota</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
-            <td><button>hola</button></td>
-            <td><input type="text" name="actividad[]" placeholder="Nombre de la actividad" required></td>
-            <td><input type="number" name="nota[]" placeholder="Nota" min="0" max="10" required></td>
           </tr>
         </tbody>
+
       </table>
-    </form>
+
 <table>
     <div class="result">
-      <p>Promedio: </p>
-      <p>Estado: </p>
+      <div id="Promedio"> </div>
+
+      <div id="resultadoPromedio"> </div>
+      <div id="Estado"> </div>
+
     </div>
 </table>
 <table>
   <div class="actividad">
-    <p >Actividad: </p>
-    <p >Nota:</p>
-    <button id="guardar">Guardar</button>
+    <p >Actividad: <input type="text"id="actividad"> </textarea> </p>
+    <p >Nota:<input type="number" id="nota">  </textarea> </p>
+    <button onclick="guardar_valores()">Guardar</button>
+    
+
   </div>
 </table>
  
   </div>
   </div>
-
   <script src="js/index.js"></script>
 
 </body>
