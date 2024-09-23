@@ -54,15 +54,14 @@ function agregarFila(nombre, nota) {
  function guardar_valores(){
     let nombre = document.getElementById("actividad").value;
     let nota = document.getElementById("nota").value;
-     // Validar 
+
+    // Validar 
+    nota = parseFloat(nota);
   if (isNaN(nota) || nota < 0 || nota > 5) {
     alert("Por favor, ingresa una nota válida entre 0.0 y 5.0.");
     return;
   }
     agregarFila(nombre, nota);
-    
-
-
  }
 function mostrarModalEliminar(fila) {
   let modal = document.getElementById("modal");
