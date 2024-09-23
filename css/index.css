@@ -146,3 +146,23 @@ body {
   background-color: #555;
 }
 
+#guardar {
+  background-color: #353d42;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+#guardar:hover {
+  background-color: #74b9ff;
+  transform: scale(1.05); 
+}
+
+#guardar:active {
+  transform: scale(0.95); 
+}
